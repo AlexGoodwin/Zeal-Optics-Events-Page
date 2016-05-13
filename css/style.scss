@@ -10,7 +10,10 @@ body {
     margin: 0;
     background: white;
     box-sizing: border-box;
-    font-family: "Interstate", Helvetica, sans-serif;
+    font-family: "Interstate", Helvetica, Arial, sans-serif;
+    letter-spacing: .025em;
+    color: $darkGrey;
+    line-height: 1.5;
 }
 
 * {
@@ -600,14 +603,14 @@ h1 {
                 }
                 
                 h3 {
-                    font-size: 1.5em;
-                    margin-bottom: 14px;
+                    font-size: 1.2em;
+                    margin-bottom: 6px;
+                    line-height: 1;
                 }
                 
                 p {
                     font-size: 12px;
-                    font-weight: 400;
-                    line-height: 1em;
+                    font-weight: 300;
                 }
             }
         }
