@@ -478,42 +478,44 @@ h1 {
     /* line 588, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
     .main .pastEvents ul {
       display: flex;
-      flex-flow: row wrap; }
-      /* line 592, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
+      flex-flow: row wrap;
+      max-width: 1000px;
+      margin: 0 auto; }
+      /* line 594, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
       .main .pastEvents ul li {
         flex-basis: 33.33%;
         flex-grow: 1;
         flex-shrink: 0;
         padding: 1em; }
-        /* line 598, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
+        /* line 600, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
         .main .pastEvents ul li img {
           width: 25%;
           display: inline-block;
           float: left;
           margin: 0 0.5em 0.5em 0; }
-        /* line 605, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
+        /* line 607, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
         .main .pastEvents ul li h3 {
           font-size: 1.2em;
           margin-bottom: 6px;
           line-height: 1; }
-        /* line 611, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
+        /* line 613, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
         .main .pastEvents ul li p {
           font-size: 12px;
           font-weight: 300; }
 
 @media screen and (max-width: 991px) {
-  /* line 623, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
+  /* line 625, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
   .navbar .nav-container .left-menu {
     display: inline-flex;
     flex-basis: 0;
     flex-grow: 2; }
-  /* line 629, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
+  /* line 631, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
   .navbar .nav-container .search-and-country {
     display: none; }
-  /* line 633, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
+  /* line 635, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
   .navbar .nav-container .nav-left, .navbar .nav-container .nav-right {
     display: none; }
-  /* line 640, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
+  /* line 642, /Users/alex/Dropbox/Client Media/Zeal Optics/Zeal-Optics-Events-Page/css/style.scss */
   .navbar .nav-container .logo a.navbar-logo .content img {
     height: 50px; } }
 

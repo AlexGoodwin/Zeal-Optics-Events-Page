@@ -588,6 +588,8 @@ h1 {
         ul {
             display: flex;
             flex-flow: row wrap;
+            max-width: 1000px;
+            margin: 0 auto;
             
             li {
                 flex-basis: 33.33%;
