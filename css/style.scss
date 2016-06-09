@@ -521,13 +521,13 @@ h1 {
     .heroTop {
         border-top: 4px solid $navy;
         border-bottom: 4px solid $navy;
-        padding: 0;
+        padding: 500px 1em;
         background: url('../img/events-hero.jpg') center center no-repeat;
         background-size: cover;
         color: white;
         
         h1{
-            padding: 20px 1em;
+            padding: 1em;
             font-size: 5em;
             text-shadow: 0 0 20px rgba($darkGrey, .5);
         }
