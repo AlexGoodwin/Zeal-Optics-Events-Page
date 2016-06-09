@@ -1,5 +1,5 @@
 @import url(reset.css);
-/* line 11, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+/* line 11, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
 body {
   padding: 0;
   margin: 0;
@@ -10,18 +10,18 @@ body {
   color: #333;
   line-height: 1.5; }
 
-/* line 22, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+/* line 22, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
 * {
   box-sizing: inherit; }
 
-/* line 26, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+/* line 26, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
 a {
   font-family: "Interstate", sans-serif;
   color: #666;
   text-decoration: none;
   text-transform: uppercase; }
 
-/* line 33, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+/* line 33, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
 h1 {
   text-align: center;
   font-size: 5em;
@@ -30,26 +30,26 @@ h1 {
   text-transform: uppercase;
   background-color: transparent; }
 
-/* line 42, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+/* line 42, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
 .navbar {
   background: transparent;
   padding: 0;
   text-align: center;
   font-size: 14px;
   width: 100%; }
-  /* line 49, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 49, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .navbar.slide-active {
     overflow-x: hidden;
     overflow-y: visible;
     height: 64px; }
-    /* line 54, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 54, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .navbar.slide-active .nav-container {
       left: 230px;
       position: fixed; }
-    /* line 58, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 58, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .navbar.slide-active ul.slide-menu {
       left: 0; }
-  /* line 63, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 63, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .navbar ul.slide-menu {
     width: 230px;
     left: -230px;
@@ -64,19 +64,19 @@ h1 {
     position: fixed;
     border-right: 1px solid #ccc;
     height: 2500px; }
-    /* line 78, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 78, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .navbar ul.slide-menu > li {
       display: block;
       padding: 0;
       border-bottom: 1px solid #ccc; }
-      /* line 83, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 83, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar ul.slide-menu > li:first-of-type {
         padding: 18.5px 30px; }
-      /* line 87, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 87, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar ul.slide-menu > li form {
         line-height: 24px;
         position: relative; }
-        /* line 91, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 91, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar ul.slide-menu > li form input[type=text], .navbar ul.slide-menu > li form input[type=search] {
           border: none;
           border-bottom: 1px solid #333;
@@ -86,10 +86,10 @@ h1 {
           border-radius: 0;
           -webkit-appearance: none;
           width: 100%; }
-          /* line 101, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+          /* line 101, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
           .navbar ul.slide-menu > li form input[type=text]:focus, .navbar ul.slide-menu > li form input[type=search]:focus {
             outline: 0; }
-        /* line 106, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 106, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar ul.slide-menu > li form input[type=submit] {
           background: url("../img/search_img.png") top left no-repeat;
           text-indent: -9999px;
@@ -99,47 +99,47 @@ h1 {
           position: absolute;
           top: 8px;
           right: 8px; }
-          /* line 116, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+          /* line 116, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
           .navbar ul.slide-menu > li form input[type=submit]:hover {
             cursor: pointer; }
-      /* line 122, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 122, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar ul.slide-menu > li > a {
         display: block;
         color: #333;
         background: url("../img/accordion-arrow-down.gif") 195px center no-repeat;
         padding: 20px 30px; }
-        /* line 128, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 128, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar ul.slide-menu > li > a.open {
           background-image: url("../img/accordion-arrow-up.gif"); }
-        /* line 132, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 132, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar ul.slide-menu > li > a.no-arrow {
           background: none; }
-        /* line 136, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 136, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar ul.slide-menu > li > a span {
           vertical-align: top;
           top: 2px;
           left: 5px;
           position: relative; }
-      /* line 144, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 144, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar ul.slide-menu > li ul {
         display: none;
         list-style: none;
         padding: 0 30px; }
-        /* line 149, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 149, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar ul.slide-menu > li ul li {
           display: block;
           padding: 0;
           font-size: .8em; }
-          /* line 155, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+          /* line 155, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
           .navbar ul.slide-menu > li ul li:first-of-type a {
             padding-top: 0; }
-          /* line 160, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+          /* line 160, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
           .navbar ul.slide-menu > li ul li a {
             color: #333;
             padding: 1em 2em;
             display: block;
             line-height: 1.5em; }
-  /* line 171, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 171, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .navbar .nav-container {
     background: white;
     display: flex;
@@ -153,53 +153,53 @@ h1 {
     width: 100%;
     transition: left 0.5s ease;
     left: 0; }
-    /* line 185, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 185, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .navbar .nav-container.fixed {
       position: fixed; }
-      /* line 191, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 191, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container.fixed .logo a.navbar-logo .content img {
         height: 56px;
         transition: height 0.5s ease; }
-      /* line 200, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 200, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container.fixed .search-and-country form#input_ZOSearchBoxComponent {
         top: 75px; }
-      /* line 208, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 208, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container.fixed .nav-left li a img.active-triangle, .navbar .nav-container.fixed .nav-right li a img.active-triangle {
         top: 36px; }
-      /* line 212, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 212, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container.fixed .nav-left li ul.drop-down, .navbar .nav-container.fixed .nav-right li ul.drop-down {
         top: 75px; }
-    /* line 219, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 219, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .navbar .nav-container .left-menu {
       display: none; }
-    /* line 223, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 223, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .navbar .nav-container .search-and-country {
       order: 1;
       flex-grow: 3;
       flex-basis: 0;
       text-align: left; }
-      /* line 230, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 230, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container .search-and-country.open-search form#input_ZOSearchBoxComponent {
         height: 80px;
         transition: height 0.5s ease, padding 0.5s ease, border 0s;
         padding: 0.5em 1em;
         border-top-width: 4px;
         z-index: 10; }
-      /* line 239, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 239, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container .search-and-country.open-search a img.active-triangle {
         display: block; }
-      /* line 246, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 246, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container .search-and-country.open-country ul#desktop-country-selector {
         height: 100px;
         padding: 1em;
         border-width: 1px;
         transition: height 0.5s ease, border 0s, padding-left 0s, padding-right 0s;
         z-index: 11; }
-      /* line 255, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 255, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container .search-and-country.open-country a#nav-country {
         background: url("../img/country-selector-arrow.png") right 4px no-repeat;
         padding-right: 4px; }
-      /* line 262, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 262, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container .search-and-country a {
         display: inline-block;
         margin: 0 9px;
@@ -208,19 +208,19 @@ h1 {
         color: #666;
         padding-right: 0;
         font-weight: 500; }
-        /* line 273, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 273, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .search-and-country a img.active-triangle {
           position: absolute;
           bottom: 0;
           display: none; }
-        /* line 280, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 280, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .search-and-country a span {
           vertical-align: top;
           letter-spacing: 1px;
           position: relative;
           top: 2px;
           padding: 2px 5px; }
-      /* line 289, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 289, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container .search-and-country form#input_ZOSearchBoxComponent {
         height: 0;
         overflow: hidden;
@@ -236,7 +236,7 @@ h1 {
         padding: 0 1em;
         font-size: 2em;
         z-index: 9; }
-        /* line 305, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 305, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .search-and-country form#input_ZOSearchBoxComponent input[type=search], .navbar .nav-container .search-and-country form#input_ZOSearchBoxComponent input[type=text] {
           text-transform: uppercase;
           width: 100%;
@@ -247,16 +247,16 @@ h1 {
           color: #333;
           font-weight: bold;
           font-size: 1em; }
-          /* line 316, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+          /* line 316, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
           .navbar .nav-container .search-and-country form#input_ZOSearchBoxComponent input[type=search]:focus, .navbar .nav-container .search-and-country form#input_ZOSearchBoxComponent input[type=text]:focus {
             outline: 0; }
-        /* line 321, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 321, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .search-and-country form#input_ZOSearchBoxComponent input[type=submit] {
           width: 0;
           float: left;
           border: none;
           padding: 0; }
-        /* line 328, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 328, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .search-and-country form#input_ZOSearchBoxComponent a#search-delete {
           border: none;
           background: url(../img/btn-search-close.gif);
@@ -266,7 +266,7 @@ h1 {
           right: 30px;
           top: 24px;
           text-indent: -9999px; }
-      /* line 340, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 340, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container .search-and-country ul#desktop-country-selector {
         padding: 0;
         border: 0 solid #ccc;
@@ -278,53 +278,53 @@ h1 {
         height: 0;
         transition: 0.5s ease, border 0s;
         overflow: hidden; }
-        /* line 352, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 352, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .search-and-country ul#desktop-country-selector li {
           margin: 1em 0; }
-          /* line 355, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+          /* line 355, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
           .navbar .nav-container .search-and-country ul#desktop-country-selector li a {
             text-transform: uppercase; }
-            /* line 358, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+            /* line 358, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
             .navbar .nav-container .search-and-country ul#desktop-country-selector li a span {
               text-transform: none;
               color: #999;
               margin: 0;
               padding: 0;
               top: 0; }
-    /* line 370, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 370, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .navbar .nav-container .nav-left, .navbar .nav-container .nav-right {
       flex-grow: 4;
       flex-basis: 0;
       list-style: none;
       padding: 0;
       margin: 0; }
-      /* line 377, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 377, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container .nav-left li, .navbar .nav-container .nav-right li {
         display: inline-block;
         margin: auto 6px; }
-        /* line 383, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 383, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .nav-left li.open a img.active-triangle, .navbar .nav-container .nav-right li.open a img.active-triangle {
           display: block; }
-        /* line 388, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 388, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .nav-left li.open ul.drop-down, .navbar .nav-container .nav-right li.open ul.drop-down {
           height: 223px;
           transition: height 0.5s ease, border 0s;
           border-top-width: 4px;
           z-index: 10; }
-        /* line 396, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 396, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .nav-left li a, .navbar .nav-container .nav-right li a {
           font-weight: bold;
           color: #333;
           position: relative;
           overflow: visible; }
-          /* line 402, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+          /* line 402, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
           .navbar .nav-container .nav-left li a img.active-triangle, .navbar .nav-container .nav-right li a img.active-triangle {
             position: absolute;
             top: 51px;
             width: 20px;
             left: calc(50% - 10px);
             display: none; }
-        /* line 411, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 411, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .nav-left li ul.drop-down, .navbar .nav-container .nav-right li ul.drop-down {
           height: 0;
           padding: 0;
@@ -342,7 +342,7 @@ h1 {
           transition: height 0.5s ease, border 0s;
           overflow: hidden;
           z-index: 9; }
-          /* line 429, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+          /* line 429, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
           .navbar .nav-container .nav-left li ul.drop-down li, .navbar .nav-container .nav-right li ul.drop-down li {
             margin: 0;
             display: inline-block;
@@ -351,83 +351,83 @@ h1 {
             padding: 0 50px 40px;
             box-sizing: border-box;
             vertical-align: top; }
-            /* line 438, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+            /* line 438, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
             .navbar .nav-container .nav-left li ul.drop-down li a, .navbar .nav-container .nav-right li ul.drop-down li a {
               color: #036;
               margin: 0px; }
-              /* line 442, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+              /* line 442, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
               .navbar .nav-container .nav-left li ul.drop-down li a img, .navbar .nav-container .nav-right li ul.drop-down li a img {
                 width: 100%;
                 display: block;
                 margin: 40px 0; }
-              /* line 448, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+              /* line 448, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
               .navbar .nav-container .nav-left li ul.drop-down li a span, .navbar .nav-container .nav-right li ul.drop-down li a span {
                 font-size: 14px;
                 letter-spacing: 1px;
                 vertical-align: top;
                 display: block; }
-    /* line 460, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 460, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .navbar .nav-container .nav-left {
       order: 2;
       text-align: right; }
-    /* line 465, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 465, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .navbar .nav-container .nav-right {
       order: 4;
       text-align: left; }
-    /* line 470, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 470, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .navbar .nav-container .logo {
       order: 3;
       flex-grow: 1;
       margin: 0;
       padding: 0; }
-      /* line 476, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 476, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container .logo a.navbar-logo {
         display: inline-block; }
-        /* line 480, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 480, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .logo a.navbar-logo .content img {
           width: auto;
           height: 85px;
           transition: height 0.5s ease; }
-    /* line 489, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 489, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .navbar .nav-container .account-and-cart {
       order: 5;
       flex-grow: 3;
       flex-basis: 0;
       text-align: right; }
-      /* line 495, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 495, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .navbar .nav-container .account-and-cart a {
         display: inline-block;
         margin: 0 10px; }
-        /* line 499, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 499, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .navbar .nav-container .account-and-cart a .item-count {
           position: relative;
           top: -10px; }
 
-/* line 508, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+/* line 508, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
 .main {
   width: 100%; }
-  /* line 511, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 511, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .background {
     background-image: url("../img/decorative-texture-1.png");
     background-repeat: repeat; }
-  /* line 516, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 516, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .fluid {
     width: 100%;
     margin: 0 auto; }
-  /* line 521, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 521, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .heroTop {
     border-top: 4px solid #036;
     border-bottom: 4px solid #036;
-    padding: 0;
+    padding: 200px 1em;
     background: url("../img/events-hero.jpg") center center no-repeat;
     background-size: cover;
     color: white; }
-    /* line 529, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 529, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .heroTop h1 {
-      padding: 20px 1em;
+      padding: 1rem;
       font-size: 5em;
       text-shadow: 0 0 20px rgba(51, 51, 51, 0.5); }
-  /* line 536, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 536, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .featuredEvents {
     font-size: 0;
     display: flex;
@@ -440,19 +440,19 @@ h1 {
     width: 90%;
     padding: 20px;
     background-clip: content-box; }
-    /* line 549, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 549, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .featuredEvents .content {
       margin: auto;
       width: 90%;
       vertical-align: middle;
       color: white; }
-    /* line 556, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 556, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .featuredEvents h2 {
       flex-shrink: 0;
       flex-grow: 1;
       margin-left: 1em;
       height: auto; }
-    /* line 564, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 564, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .featuredEvents ul.eventList {
       background: rgba(100, 100, 100, 0.5);
       height: auto;
@@ -464,7 +464,7 @@ h1 {
       width: auto;
       margin: auto;
       padding: 20px; }
-      /* line 576, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 576, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .featuredEvents ul.eventList h1 {
         text-align: center;
         font-size: 4rem;
@@ -476,32 +476,32 @@ h1 {
         width: 100%;
         margin: 0 auto;
         color: white; }
-      /* line 590, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 590, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .featuredEvents ul.eventList li {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         margin: 0em 1em; }
-        /* line 596, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 596, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .main .featuredEvents ul.eventList li .eventName {
           order: 1;
           display: inline-block; }
-        /* line 601, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+        /* line 601, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
         .main .featuredEvents ul.eventList li .eventDate {
           order: 2;
           display: inline-block; }
-    /* line 608, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 608, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .featuredEvents .eventInfo {
       display: inline-block;
       flex-basis: 50%;
       font-size: 1rem;
       vertical-align: top;
       margin: 0 auto; }
-      /* line 616, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 616, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .featuredEvents .eventInfo img {
         width: 100%;
         height: auto; }
-    /* line 622, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 622, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .featuredEvents .eventDetails {
       display: inline-block;
       font-size: 1.3em;
@@ -509,7 +509,7 @@ h1 {
       margin: 0.5em 1em 0em 1em;
       text-align: center;
       color: white; }
-    /* line 631, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 631, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .featuredEvents .moreDetails {
       background: #c30;
       color: white;
@@ -518,7 +518,7 @@ h1 {
       text-align: center;
       width: 180px;
       font-size: 1.3em; }
-  /* line 642, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 642, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .upcomingEventList2 {
     padding: 20px 0px;
     width: 90%;
@@ -526,7 +526,7 @@ h1 {
     background-color: transparent;
     font-size: 0;
     margin: 0 auto; }
-    /* line 650, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 650, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .upcomingEventList2 h2 {
       flex-basis: 100%;
       flex-shrink: 0;
@@ -537,7 +537,7 @@ h1 {
       margin-left: 2rem;
       margin-top: .5em;
       text-align: left; }
-    /* line 662, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 662, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .upcomingEventList2 .card {
       -webkit-box-shadow: 0px 0px 30px #bbb;
       -moz-box-shadow: 0px 0px 30px #bbb;
@@ -545,11 +545,11 @@ h1 {
       height: auto;
       width: 100%;
       background: #366; }
-    /* line 671, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 671, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .upcomingEventList2 .imageBackground {
       height: auto;
       width: 100%; }
-    /* line 676, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 676, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .upcomingEventList2 .content {
       margin: 0 auto;
       width: 100%;
@@ -557,7 +557,7 @@ h1 {
       background: white;
       height: auto;
       display: inline-block; }
-    /* line 685, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 685, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .upcomingEventList2 h1 {
       text-align: center;
       font-size: 3rem;
@@ -569,7 +569,7 @@ h1 {
       flex-grow: 1;
       color: black;
       background-color: transparent; }
-    /* line 698, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 698, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .upcomingEventList2 .upcomingEvent {
       font-size: 1rem;
       padding: 20px;
@@ -578,11 +578,11 @@ h1 {
       vertical-align: top;
       width: 33.33%;
       box-sizing: border-box; }
-      /* line 708, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 708, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .upcomingEventList2 .upcomingEvent img {
         width: 100%;
         height: 100%; }
-    /* line 714, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 714, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .upcomingEventList2 .eventDetails {
       width: 100%;
       margin: 16px;
@@ -596,7 +596,7 @@ h1 {
       text-align: left;
       margin-left: 2rem;
       padding-right: 3em; }
-    /* line 730, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 730, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .upcomingEventList2 .moreDetails {
       background: #c30;
       color: white;
@@ -606,17 +606,17 @@ h1 {
       display: block;
       width: 180px;
       font-size: 1.3em; }
-  /* line 742, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 742, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .topBar {
     border-top: 5px solid #366; }
-  /* line 746, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 746, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .pastEvents {
     width: 90%;
     font-size: 0em;
     background-image: url("../img/decorative-texture-1.png");
     background-repeat: repeat;
     margin: 1em auto; }
-    /* line 753, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 753, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents h2 {
       flex-basis: 100%;
       flex-shrink: 0;
@@ -628,13 +628,13 @@ h1 {
       align-self: flex-end;
       justify-content: flex-start;
       margin-left: 1em; }
-    /* line 767, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 767, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents .card {
       -webkit-box-shadow: 0px 0px 15px #888888;
       -moz-box-shadow: 0px 0px 15px #888888;
       box-shadow: 0px 0px 15px #888888;
       margin-bottom: 1rem; }
-    /* line 774, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 774, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents .imageBackground {
       background: -moz-linear-gradient(top, transparent 0%, transparent 70%, white 100%), url("../img/biking.jpg") no-repeat;
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(70%, transparent), color-stop(100%, white)), url("../img/biking.jpg") no-repeat;
@@ -646,7 +646,7 @@ h1 {
       height: 300px;
       display: flex;
       vertical-align: middle; }
-    /* line 787, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 787, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents .imageBackground2 {
       background: -moz-linear-gradient(top, transparent 0%, transparent 70%, white 100%), url("../img/kayaking.jpg") no-repeat;
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(70%, transparent), color-stop(100%, white)), url("../img/kayaking.jpg") no-repeat;
@@ -658,7 +658,7 @@ h1 {
       height: 300px;
       display: flex;
       vertical-align: middle; }
-    /* line 800, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 800, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents .imageBackground3 {
       background: -moz-linear-gradient(top, transparent 0%, transparent 70%, white 100%), url("../img/dewTourOG.jpg") no-repeat;
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(70%, transparent), color-stop(100%, white)), url("../img/dewTourOG.jpg") no-repeat;
@@ -670,7 +670,7 @@ h1 {
       height: 300px;
       display: flex;
       vertical-align: middle; }
-    /* line 814, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 814, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents .imageBackground4 {
       background: -moz-linear-gradient(top, transparent 0%, transparent 70%, white 100%), url("../img/zealAtDewTour.png") no-repeat;
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(70%, transparent), color-stop(100%, white)), url("../img/zealAtDewTour.png") no-repeat;
@@ -682,7 +682,7 @@ h1 {
       height: 300px;
       display: flex;
       vertical-align: middle; }
-    /* line 829, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 829, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents .content {
       margin: 0 auto;
       width: 100%;
@@ -692,7 +692,7 @@ h1 {
       display: inline-block;
       justify-content: left;
       background-color: white; }
-    /* line 840, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 840, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents h1 {
       text-align: left;
       font-size: 3rem;
@@ -703,7 +703,7 @@ h1 {
       flex-shrink: 0;
       flex-grow: 1;
       color: black; }
-    /* line 852, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 852, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents .pastEvent {
       float: left;
       height: auto;
@@ -712,7 +712,7 @@ h1 {
       display: inline-block;
       width: 25%;
       border-radius: 15px; }
-    /* line 862, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 862, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents .eventDetails {
       flex-grow: 1;
       flex-shrink: 1;
@@ -722,7 +722,7 @@ h1 {
       margin: 0.5em 1.3em 0em 2rem;
       color: black;
       text-align: left; }
-    /* line 875, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 875, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents .moreDetails {
       background: #c30;
       color: white;
@@ -733,7 +733,7 @@ h1 {
       width: 150px;
       margin: 1em auto 2em 2rem; }
 
-/* line 888, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+/* line 888, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
 footer {
   background-color: #366;
   width: 100%;
@@ -742,7 +742,7 @@ footer {
   line-height: 80px;
   text-align: center;
   margin-top: 50px; }
-  /* line 897, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 897, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   footer .footerText {
     display: inline-block;
     color: white;
@@ -751,121 +751,121 @@ footer {
     padding: 0 auto; }
 
 @media screen and (max-width: 991px) {
-  /* line 911, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 911, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .navbar .nav-container .left-menu {
     display: inline-flex;
     flex-basis: 0;
     flex-grow: 2; }
-  /* line 917, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 917, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .navbar .nav-container .search-and-country {
     display: none; }
-  /* line 921, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 921, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .navbar .nav-container .nav-left, .navbar .nav-container .nav-right {
     display: none; }
-  /* line 928, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 928, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .navbar .nav-container .logo a.navbar-logo .content img {
     height: 50px; } }
 
 @media screen and (max-width: 991px) and (min-width: 500px) {
-  /* line 940, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 940, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .heroTop h1 {
     padding: 1em 20px;
     font-size: 4em; }
-  /* line 944, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 944, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .background h1 {
     font-size: 4rem; }
-  /* line 947, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 947, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .upcomingEventList2 {
     width: 100%; }
-    /* line 949, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 949, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .upcomingEventList2 .upcomingEvent {
       width: 50%;
       padding: 10px; }
-      /* line 954, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 954, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .upcomingEventList2 .upcomingEvent .card .content h2 {
         font-size: 2rem; }
-      /* line 957, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 957, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .upcomingEventList2 .upcomingEvent .card .content .eventDetails {
         font-size: 1rem; }
-      /* line 960, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 960, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .upcomingEventList2 .upcomingEvent .card .content .moreDetails {
         font-size: 1rem; }
-  /* line 968, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 968, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .pastEvents {
     width: 100%; }
-    /* line 970, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 970, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents .pastEvent {
       width: 50%;
       padding: 10px; }
-      /* line 973, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 973, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .pastEvents .pastEvent .eventDetails {
         font-size: 1rem; }
-  /* line 978, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 978, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .featuredEvents {
     width: 100%;
     padding: 10px; }
-    /* line 982, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 982, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .featuredEvents .eventList .eventName {
       font-size: 3rem; }
-    /* line 985, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 985, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .featuredEvents .eventList .eventDetails {
       font-size: 1rem; }
-    /* line 988, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 988, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .featuredEvents .eventList .moreDetails {
       font-size: 1rem; } }
 
 @media screen and (max-width: 499px) {
-  /* line 998, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 998, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .heroTop h1 {
     text-align: center;
     font-size: 3em;
     padding: 1em 5px; }
-  /* line 1003, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 1003, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .background h1 {
     font-size: 3rem; }
-  /* line 1006, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 1006, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .upcomingEventList2 {
     width: 100%; }
-    /* line 1008, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 1008, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .upcomingEventList2 .upcomingEvent {
       width: 100%;
       padding: 10px; }
-      /* line 1013, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 1013, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .upcomingEventList2 .upcomingEvent .card .content h2 {
         font-size: 2rem; }
-      /* line 1016, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 1016, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .upcomingEventList2 .upcomingEvent .card .content .eventDetails {
         font-size: 1rem; }
-      /* line 1019, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 1019, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .upcomingEventList2 .upcomingEvent .card .content .moreDetails {
         font-size: 1rem; }
-  /* line 1026, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 1026, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .pastEvents {
     width: 100%; }
-    /* line 1028, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 1028, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .pastEvents .pastEvent {
       width: 100%;
       padding: 10px; }
-      /* line 1031, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 1031, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .pastEvents .pastEvent .eventDetails {
         font-size: 1rem; }
-  /* line 1036, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+  /* line 1036, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
   .main .featuredEvents {
     width: 100%;
     padding: 10px; }
-    /* line 1039, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+    /* line 1039, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
     .main .featuredEvents .eventList {
       padding: 5px; }
-      /* line 1041, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 1041, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .featuredEvents .eventList li {
         margin: 0 auto; }
-      /* line 1044, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 1044, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .featuredEvents .eventList .eventName {
         font-size: 2rem; }
-      /* line 1047, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 1047, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .featuredEvents .eventList .eventDetails {
         font-size: 1rem; }
-      /* line 1050, /Users/retail/Desktop/epic-eventsPage-master/css/style.scss */
+      /* line 1050, /Users/retail/Desktop/epic-eventsPage/css/style.scss */
       .main .featuredEvents .eventList .moreDetails {
         font-size: 1rem; } }
 
