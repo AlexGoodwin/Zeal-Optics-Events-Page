@@ -472,7 +472,7 @@ h1 {
             flex-grow: 4;
             flex-shrink: 1;
             min-height: 600px;
-            padding: 2em;
+            padding: 0;
             box-sizing: border-box;
             background-image: url('../img/camping.jpg');
             background-size: cover;
@@ -481,39 +481,65 @@ h1 {
             text-align: center;
             display: flex;
             flex-flow: row nowrap;
-            align-items: center;
+            align-items: flex-end;
             align-content: center;
 
             .content {
-                background: rgba(0,0,0,.4);
-                padding: 1em 3em;
+                background: rgba(0,0,0,.5);
+                padding: 1em;
                 overflow: auto;
                 margin: 0 auto;
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: baseline;
+                text-align: left;
+                justify-content: space-between;
 
                 h3 {
                     font-size: 3em;
-                    margin: 0.5em auto;
+                    margin: 0;
+                    flex-basis: 60%;
+                    order: 1;
+                    flex-grow: 2;
                 }
                 h4 {
-                    font-size: 1.5em;
-                    margin: 1em;
+                    font-size: 1em;
+                    margin: 0;
+                    order: 3;
+                    flex-basis: 50%;
+                    align-self: flex-end;
+                    position: relative;
+                    top: -25px;
 
-                    &:last-of-type {
-                      margin-top: -1em;
+                    &.date {
+                      order: 3;
+                    }
+                    &.location {
+                      order: 5;
                     }
                 }
                 p {
                     font-size: 1em;
                     text-align: left;
                     max-width: 800px;
-                    margin: 1em auto;
+                    margin: 0;
+
+                    &.eventDetails {
+                      flex-basis: 40%;
+                      order: 2;
+                      text-align: right;
+                      flex-grow: 1;
+                    }
                 }
                 .moreDetails {
-                    margin: 1em;
+                    margin: 0;
                     display: inline-block;
                     background: #c30;
                     padding: 1em 2em;
                     color: white;
+                    order: 4;
+                    text-align: right;
                 }
             }
         }
@@ -532,6 +558,7 @@ h1 {
                 padding: 0;
                 text-align: center;
                 position: relative;
+                align-items: center;
 
                 &:hover {
                   cursor: pointer;
@@ -567,12 +594,13 @@ h1 {
                   transition: .5s ease;
 
                   h3 {
-                      font-size: 2em;
+                      font-size: 1.5em;
                       text-shadow: 0 0 1em rgba(0,0,0,.5)
                   }
                   h4 {
                     font-size: 1em;
-                    text-shadow: 0 0 1em rgba(0,0,0,.5)
+                    text-shadow: 0 0 1em rgba(0,0,0,.5);
+                    top: 0;
                   }
                   .location {
                       display: none;
