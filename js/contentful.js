@@ -33,12 +33,14 @@ function featureEvent(event) {
       event = $(event).first(),
       oldEvent = $('ul.featuredEvents li').first();
 
-  // move event to first li
-  $(featuredEvents).prepend(event);
+  if($(oldEvent).attr('id') !== $(event).attr('id')) {
+    // move event to first li
+    $(featuredEvents).prepend(event);
 
-  // move old event to list on right
-  $('ul.featuredEvents ul.other').append(oldEvent);
-  // $(oldEvent).remove();
+    // move old event to list on right
+    $('ul.featuredEvents ul.other').append(oldEvent);
+    // $(oldEvent).remove();
+  }
 }
 
 /*
@@ -74,7 +76,7 @@ function getEvents() {
                 maxDetailsChars = 150, // number of characters to allow before truncating
                 response = JSON.parse(this.responseText);
 
-                console.log(response);
+                // console.log(response);
 
             /*
                 Insert each event into dom
@@ -95,7 +97,8 @@ function getEvents() {
                 }
 
                 // format event start date
-                event.startDate = moment(event.startDate).format("ddd, MMM D h:mmA");
+                event.longStartDate = moment(event.startDate).format("ddd, MMM D h:mmA");
+                event.shortStartDate = moment(event.startDate).format("M/D/YY hA");
 
                 // create template element
                 element = '<div class="event">' +
@@ -108,7 +111,7 @@ function getEvents() {
                     '<h2>' + event.name + '</h2>' +
                     '<div class="details">' +
                     '<div class="location">' + event.locationString + '</div>' +
-                    '<div class="startDate">' + event.startDate + '</div>' +
+                    '<div class="startDate">' + event.longStartDate + '</div>' +
                     '</div>' +
                     '<h3>' + event.teaser + '</h3>' +
                     '<p class="eventDetails">' + event.truncatedDetails + '</p>' +
@@ -117,7 +120,7 @@ function getEvents() {
                     '</div>';
 
                 // sort into upcoming or past
-                if (moment(event.startDate, "ddd, MMM D h:mmA").isAfter(moment())) {
+                if (moment(event.startDate).isAfter(moment())) {
                     // move to upcoming
                     masonry.append(element).masonry('appended', element);
                 } else {
@@ -126,11 +129,12 @@ function getEvents() {
                 }
 
                 // if featured (and in the future), make a copy in featuredImages with id=event.slug
-                if (event.featuredEvent && moment(event.startDate, "ddd, MMM D h:mmA").isAfter(moment())) {
+                if (event.featuredEvent && moment(event.startDate).isAfter(moment())) {
                     element = '<li data-photo-id="' + event.featuredImage.sys.id + '" class="featuredEventTop" id="'+event.slug+'">' +
+                        '<div class="bg" data-photo-id="' + event.featuredImage.sys.id + '"></div>' +
                         '<div class="content">' +
                         '<h3 class="eventName">' + event.name + '</h3>' +
-                        '<h4 class="date">' + event.startDate + '</h4>' +
+                        '<h4 class="date">' + event.shortStartDate + '</h4>' +
                         '<h4 class="location">' + event.locationString + '</h4>' +
                         '<p class="eventDetails">' + event.teaser + '</p>' +
                         '<a href="#" class="moreDetails">Learn More</a>' +
@@ -164,7 +168,7 @@ function getEvents() {
 
                 $(elem).each(function() {
                   if ($(this).hasClass('featuredEventTop')) {
-                      $(this).css('background-image', 'url(' + url + ')');
+                      $(this).find('div.bg').first().css('background-image', 'url(' + url + ')');
                   } else {
                       // console.log('found this img: ');
                       // console.log($(elem));

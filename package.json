@@ -10,6 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-minify": "0.0.11"
+    "gulp-minify": "0.0.11",
+    "gulp-sass": "^2.3.1"
+  },
+  "sasslintConfig": "sass-lint.yml",
+  "devDependencies": {
+    "gulp-sass": "^2.3.1",
+    "gulp-watch": "^4.3.6"
   }
 }
