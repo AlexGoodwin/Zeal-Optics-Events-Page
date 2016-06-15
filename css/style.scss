@@ -884,6 +884,252 @@ h1 {
             }
         }
     }
+.detailPageContent {
+    width: 100%;
+    .background{
+        background-image:url("../img/decorative-texture-1.png");        
+        background-repeat: repeat;    
+    .whiteBg{
+            background-color:white;
+            padding:60px 0px;
+            height:auto;
+            .card{ 
+                background-color:$green;
+                width:90%;
+                margin:0 5%;
+                -webkit-box-shadow: 0px 0px 30px #bbb;
+                -moz-box-shadow: 0px 0px 30px #bbb;
+                box-shadow: 0px 0px 30px #bbb;
+                height:auto;                
+                .heroHeader {
+                        font-size: 0;
+                        display: flex;
+                        flex-flow: row wrap;
+                        margin: 0px auto;
+                        background: url(../img/hero.jpg) center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height:800px;
+                        width:100%;
+                        padding: 0px 0px 10px 0px;
+                        background-clip: content-box;
+                        .center {
+                            display: flex;
+                            flex-flow: column nowrap;
+                            margin:auto;
+                            h1.eventName {
+                                text-align: center;
+                                font-size: 5.625rem;
+                                margin:0 auto;
+                                color:white;
+                                text-shadow: 0 0 20px rgba($darkGrey, .5);
+                            }
+                        }
+
+                        .eventInfo {
+                            display: inline-block;
+                            flex-basis: 50%;
+                            font-size: 1rem;
+                            vertical-align: top;
+                            margin:0 auto;
+                            img {
+                                width: 100%;
+                                height:auto;
+                            }
+                        }
+
+                        .eventDetails{
+                            display: inline-block;
+                            font-size: 1.3em;
+                            vertical-align: top;
+                            margin: .5em 1em 0em 1em;
+                            text-align: center;
+                            color:white;
+                        }
+
+                         .moreDetails{
+                            background: #c30;
+                            color: white;
+                            padding: .5em;
+                            margin: 1em auto 48px auto;
+                            text-align: center;
+                            width: 180px;
+                             font-size:1.3em;
+                        }
+                    }
+            }
+    
+        .content{
+            width:100%;
+            background-color:white;
+            margin:0px auto;
+            display:flex;
+            height:auto;
+
+//            .overlay{
+//                background:transparent; 
+//                position:relative; 
+//    //            width:640px;
+//                height:600px; /* your iframe height */
+//                top:600px;  /* your iframe height */
+//                margin-top:-600px;  /* your iframe height */
+//            }
+            .left{
+                height:600px;
+                width:50%;
+                padding:10px;
+                flex-basis:50%;
+                vertical-align:middle;
+                iframe{
+                    width:100%;
+                    height:100%;
+                    display:block;
+                }
+            }
+            .right{
+                width:50%;
+                padding:10px;
+                flex-basis:50%;
+                height:auto;
+                .text{
+                    height:auto;
+                    vertical-align:middle;
+                    padding: 30px 60px;
+                    .eventDetails{
+                        font-family: "Interstate",Helvetica,Arial,sans-serif;
+                        font-weight: bold; 
+                        display: inline-block;
+                        font-size: 2em;
+                        text-align: left;
+                        color:black;
+                        margin-bottom:1rem;
+                        line-height:1.5;
+                    }
+                    .description{
+                        font-size:1.3em;
+                        font-weight: normal;
+                        max-width:800px;
+                    }
+                }
+            }
+        }
+    }
+
+    .poster{
+        width:90%;
+        height:auto;
+        padding-top:60px;
+        flex-basis:100%;
+        margin:0 auto;
+        img{
+            width:100%;
+        }
+    }
+      
+    .exploreMoreContainer{
+        width:90%;
+        margin:0px 5%;
+        display:flex;
+        padding: 60px 0;
+        .exploreMoreInfo{
+            width:50%;
+            flex-basis:50%;
+            padding: 30px 60px;
+            background-color: white;
+            display:flex;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            .vCenter{                
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                display:block;
+                line-height:1.5;
+                h2{
+                    font-size:2.625em;
+                    margin-bottom:22px;
+                    font-family: "Interstate",Helvetica,Arial,sans-serif;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                ul{
+                    li{ 
+                        margin:16px 0px;
+                        a{
+                            font-weight:bold;
+                            font-size:1.125em;
+                            color:#036;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+        .exploreMoreVid{
+            width:50%;
+            flex-basis:50%;
+            iframe{
+                width:100%;
+                padding:0px;
+                text-align:center;
+                margin:0 auto;
+                height: 562.5px; //16:9 ratio
+                display:block;
+            }    
+        }
+    }
+    
+    #eventFeedTag{
+        background-color:white;
+    }
+    
+    .igFeed{
+        padding: 20px 0px;
+        width: 90%;
+        text-align: center;
+        background-color: transparent;
+        font-size: 0;
+        margin: 0 auto;
+        
+        .igImage{
+//            font-size: 1rem;
+            padding: 5px;
+//            margin: 10px;
+            display: inline-block;
+            border-radius: 15px;
+            vertical-align: top;
+            width:33.33%;
+            box-sizing: border-box;
+            .card{
+                height:auto;
+                width:100%;
+                .imageBackground{
+                    height:auto;
+                    width:100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+         .moreDetails{
+            background:#c30;
+            color:white;
+            padding:.5em;
+            margin: 1em auto 2em 1.5em;
+            text-align:center;                
+            display: block;
+            width: 180px;
+            font-size:1.3em;
+        }
+    }
+    
+}
+}
 
     footer{
         background-color: $green;
@@ -904,8 +1150,13 @@ h1 {
     }
 
 
+@media screen and (max-width: 1680px) { 
+    
 
-@media screen and (max-width: 991px) {
+}
+
+
+@media screen and (max-width: 1679px) and(min-width: 992px) {
     .navbar {
         .nav-container {   
             .left-menu {
@@ -990,7 +1241,62 @@ h1 {
                }
            }
        }
-    }    
+    } 
+    .detailPageContent{
+       .heroTop h1 {
+            padding: 1em 20px;
+            font-size: 4em;
+        }
+        .background h1{
+           font-size:4rem;
+       }
+        .upcomingEventList2{
+            width:100%;
+            .upcomingEvent{
+                width:50%;
+                padding:10px;
+                .card{
+                    .content{
+                        h2{
+                            font-size:2rem;
+                        }
+                        .eventDetails{
+                            font-size:1rem;
+                        }
+                        .moreDetails{
+                            font-size:1rem;
+                        }
+                    }
+                }
+            }
+        }
+       
+         .pastEvents{
+             width:100%;
+            .pastEvent{
+                width:50%;
+                padding:10px;
+                .eventDetails{
+                    font-size:1rem;
+                }
+            }
+       }
+       .featuredEvents{
+           width:100%;
+           padding:10px;
+           .eventList{
+               .eventName{
+                    font-size:3rem;
+               }
+               .eventDetails{
+                   font-size:1rem;
+               }
+               .moreDetails{
+                   font-size:1rem;
+               }
+           }
+       }
+    }
 }
 
 @media screen and(max-width: 499px) {
@@ -1052,6 +1358,68 @@ h1 {
                }
            }
        }
-    }    
+    } 
+    
+    .detailPageContent{
+        .heroTop h1 {
+            text-align:center;
+            font-size: 3em;
+            padding:1em 5px;
+        }
+        .background h1{
+            font-size:3rem;
+        }
+        .upcomingEventList2{
+            width:100%;
+        .upcomingEvent{
+                width:100%;
+                padding:10px;
+                .card{
+                    .content{
+                        h2{
+                            font-size:2rem;
+                        }
+                        .eventDetails{
+                            font-size:1rem;
+                        }
+                        .moreDetails{
+                            font-size:1rem;
+                        }
+                    }
+                }
+            }
+        }
+    .pastEvents{
+             width:100%;
+            .pastEvent{
+                width:100%;
+                padding:10px;
+                .eventDetails{
+                    font-size:1rem;
+                }
+            }
+       }
+       .featuredEvents{
+           width:100%;
+           padding:10px;
+           height:600px;
+           .eventList{
+               padding:5px;
+               li{
+                   margin: 0 auto;
+               }
+               .eventName{
+                    font-size:2rem;
+               }
+               .eventDetails{
+                   font-size:1rem;
+               }
+               .moreDetails{
+                   font-size:1rem;
+               }
+           }
+       }
+    }
 }
+
     
