@@ -6,28 +6,48 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minify = require('gulp-minify'),
-    input = './css/style.css',
+    browserSync = require('browser-sync').create(),
+    input = './css/**/*.scss',
     output = './css';
 
 gulp.task('default', function() {
-    gulp.start('compress');
-    return gulp.src(input)
-        .pipe(sass({
-            outputStyle: 'compressed'
-        }).on('error', sass.logError))
-        .pipe(autoprefixer({
-            browsers: ['last 3 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest(output));
+    gulp.start('compressJs');
+    gulp.start('css');
 });
 
-gulp.task('compress', function() {
-    gulp.src('./js/zeal-nav-bar.js')
+gulp.task('browserSync', function() {
+    browserSync.init({
+        server: {
+            baseDir: './'
+        },
+    });
+});
+
+gulp.task('compressJs', function() {
+    gulp.src('./js/**/*.js')
         .pipe(minify({
             ext: {
                 min: '.min.js'
             }
         }))
         .pipe(gulp.dest('./js'));
+});
+
+gulp.task('css', function() {
+    return gulp.src(input)
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }).on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 3 versions']
+        }))
+        .pipe(gulp.dest(output))
+        .pipe(browserSync.reload({
+            stream: true
+        }));
+});
+
+gulp.task('watch', ['browserSync', 'css'], function() {
+    gulp.watch(input, ['css']);
+    // gulp.watch(['./js/**/*.js', '!*.min.js'], ['compressJs']);
 });

@@ -20,7 +20,7 @@ var masonry = $('.upcomingEvents').masonry({
   featured event banner actions
 */
 function addToFeaturedList(event) {
-  console.log(event);
+  // console.log(event);
   $('ul.featuredEvents ul.other').append(event);
 }
 
@@ -50,8 +50,6 @@ function featureEvent(event) {
         Past events needs styling updates
         Masonry widths need responsiveness
         Needs event end date/time too?
-
-    Using momentJS for time formatting
 */
 function getEvents() {
     'use strict';
@@ -88,7 +86,7 @@ function getEvents() {
                 // easy access
                 event = response.items[i].fields;
 
-                console.log(event);
+                // console.log(event);
 
                 // truncate event details to first x characters
                 if (event.details.length > maxDetailsChars) {
@@ -196,4 +194,9 @@ $(function() {
     'use strict';
 
     getEvents();
+});
+
+$(window).on('resize', function() {
+  masonry.masonry('layout');
+  pastMasonry.masonry('layout');
 });
