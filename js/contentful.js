@@ -47,8 +47,6 @@ function featureEvent(event) {
     Contentful grab
 
     TODO:
-        Past events needs styling updates
-        Masonry widths need responsiveness
         Needs event end date/time too?
 */
 function getEvents() {
@@ -86,12 +84,14 @@ function getEvents() {
                 // easy access
                 event = response.items[i].fields;
 
-                // console.log(event);
+                console.log(event);
 
                 // truncate event details to first x characters
                 if (event.details.length > maxDetailsChars) {
                     event.truncatedDetails = event.details.substr(0, maxDetailsChars);
                     event.truncatedDetails += '...';
+                } else {
+                  event.truncatedDetails = event.details;
                 }
 
                 // format event start date
