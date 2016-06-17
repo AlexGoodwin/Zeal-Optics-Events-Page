@@ -84,7 +84,7 @@ function getEvents() {
                 // easy access
                 event = response.items[i].fields;
 
-                console.log(event);
+                // console.log(event);
 
                 // truncate event details to first x characters
                 if (event.details.length > maxDetailsChars) {
@@ -98,6 +98,26 @@ function getEvents() {
                 event.longStartDate = moment(event.startDate).format("ddd, MMM D h:mmA");
                 event.shortStartDate = moment(event.startDate).format("M/D/YY hA");
 
+                /*
+                  Time Formatting
+
+                  If the event lasts more than one day, exclude the start/end time.
+                  If the event is only one day, show the start and end times.
+
+                  i.e.
+                    Jun 30 6:00PM
+                    Jun 30 - Jul 1
+                */
+
+                var startDay = moment(event.startDate).format("D"),
+                    endDay = moment(event.endDate).format("D");
+
+                if(startDay !== endDay) {
+                  event.startAndEnd = moment(event.startDate).format("MMM D - ") + moment(event.endDate).format("MMM D");
+                } else {
+                  event.startAndEnd = moment(event.startDate).format("MMM D h:mmA");
+                }
+
                 // create template element
                 element = '<div class="event">' +
                     '<div class="card">' +
@@ -109,7 +129,7 @@ function getEvents() {
                     '<h2>' + event.name + '</h2>' +
                     '<div class="details">' +
                     '<div class="location">' + event.locationString + '</div>' +
-                    '<div class="startDate">' + event.longStartDate + '</div>' +
+                    '<div class="startDate">' + event.startAndEnd + '</div>' +
                     '</div>' +
                     '<h3>' + event.teaser + '</h3>' +
                     '<p class="eventDetails">' + event.truncatedDetails + '</p>' +
@@ -132,7 +152,7 @@ function getEvents() {
                         '<div class="bg" data-photo-id="' + event.featuredImage.sys.id + '"></div>' +
                         '<div class="content">' +
                         '<h3 class="eventName">' + event.name + '</h3>' +
-                        '<h4 class="date">' + event.shortStartDate + '</h4>' +
+                        '<h4 class="date">' + event.startAndEnd + '</h4>' +
                         '<h4 class="location">' + event.locationString + '</h4>' +
                         '<p class="eventDetails">' + event.teaser + '</p>' +
                         '<a href="#" class="moreDetails">Learn More</a>' +
