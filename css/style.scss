@@ -175,8 +175,14 @@ body {
                     cursor: pointer;
                     &:after {
                         background: rgba(0,0,0,0);
+                        transition: .2s ease;
                     }
-                    .content {}
+                    .content {
+                      h3 {
+                        top: -5px;
+                        transition: .2s ease;
+                      }
+                    }
                     div.bg {
                         filter: none;
                     }
@@ -205,6 +211,9 @@ body {
                     h3 {
                         font-size: 1.5em;
                         text-shadow: 0 0 1em rgba(0,0,0,.5);
+                        position: relative;
+                        top: 0;
+                        transition: .2s ease;
                     }
                     h4 {
                         font-size: 1em;
